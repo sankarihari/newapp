@@ -1,21 +1,16 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import History from './components/History';
-import Searchbar from './components/Searchbar';
-import Callhistorypage from './pages/Callhistorypage';
-import Notifications from './components/Notifications';
-import Home from './pages/Home';
+import Front from './pages/Front';
+
+
+
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<History />} />
-          <Route path='/search' element={<Searchbar />} />
-          <Route path='/history' element={<Callhistorypage />} />
-          <Route path='/not' element={<Notifications />} />
-          <Route path='/home' element={<Home />} />
+          <Route path='/' element={<Front />} />      
         </Routes>
       </BrowserRouter>
     </div>

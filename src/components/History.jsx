@@ -1,45 +1,66 @@
-import { ArrowOutward, CallMissed, CallReceived } from '@mui/icons-material'
+
 import { Avatar, List, ListItem, ListItemAvatar, ListItemText, Typography } from '@mui/material'
 import React from 'react'
-import styled from 'styled-components'
 
-const Container = styled.div`
-  
-`
+
+
 
 const History = () => {
     return (
-        <Container>
-            <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-                <ListItem>
+        <div>
+            <List sx={{ width: '100%',  bgcolor: 'background.paper' }}>
+                <ListItem  sx={{  bgcolor: '#f0f0f5' }}>
                     <ListItemAvatar>
-                        <Avatar>
+                        <Avatar sx={{ width: 24, height: 24 }}>
 
                         </Avatar>
                     </ListItemAvatar>
-                    <CallMissed style={{ color: 'red' }} />
+                    
                     <ListItemText primary="Sree" secondary="87563863856 " />
-                </ListItem>
-                <ListItem>
                     <ListItemAvatar>
-                        <Avatar>
-
+                        <Avatar sx={{ width: 24, height: 24 }}>
                         </Avatar>
                     </ListItemAvatar>
-                    <CallReceived style={{ color: 'green' }} />
+                    <Typography>
                     <ListItemText primary="Photos" secondary="Jan 9, 12:40pm" />
+                    </Typography>
+                
                 </ListItem>
-                <ListItem>
+                <ListItem >
                     <ListItemAvatar>
-                        <Avatar>
+                        <Avatar sx={{ width: 24, height: 24 }}>
+                        </Avatar>
+                    </ListItemAvatar>
+                    
+                    <ListItemText  primary="fgguggi" secondary="Jan 9, 12:40pm" />
+                    <ListItemAvatar>
+                        <Avatar sx={{ width: 24, height: 24 }}>
+                        </Avatar>
+                    </ListItemAvatar>
+                    <Typography>
+                    <ListItemText primary="Photos" secondary="Jan 9, 12:40pm" />
+                    </Typography>
+                </ListItem>
+                <ListItem  sx={{  bgcolor: '#f0f0f5' }}>
+                    <ListItemAvatar>
+                        <Avatar sx={{ width: 24, height: 24 }}>
 
                         </Avatar>
                     </ListItemAvatar>
-                    <ArrowOutward />
+                    
                     <ListItemText primary="Photos" secondary="Jan 9, 2:40am" />
+                    <ListItemAvatar>
+                        <Avatar sx={{ width: 24, height: 24 }}>
+                        </Avatar>
+                    </ListItemAvatar>
+                    <Typography>
+                    <ListItemText primary="Photos" secondary="Jan 9, 12:40pm" />
+                    </Typography>
+                   
                 </ListItem>
+                
             </List>
-        </Container>
+        </div>
     )
 }
 
